@@ -56,7 +56,7 @@ begin
     begin
     
         w_hex <= X"0"; wait for 10 ns;
-            assert w_seg = "0000001" report "bad x0" severity failure;
+            assert w_seg = "1000000" report "bad x0" severity failure;
         w_hex <= X"2"; wait for 10 ns;
             assert w_seg = "0100100" report "bad x2" severity failure; 
         w_hex <= X"4"; wait for 10 ns;
